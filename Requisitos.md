@@ -10,6 +10,7 @@
 5. Poner un limite de tiempo
 6. Enviar y/o subir documentos(libros) a la pagina
 7. Crear una vista para el publico
+8. Agregar rondas para las preguntas
 
 # El usuario podra 
 1. Logearse
