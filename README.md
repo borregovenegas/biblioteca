@@ -20,7 +20,7 @@ Debe tener o ser:
 
 7. Se les dara 30 segundos para responder.
 
-8. En la mesa del equipo, debe de haber una pantalla que mire hacia el publico para ver qué estan respondiendo los equipos.
+8. En la mesa del equipo, debe de haber una pantalla que mire hacia el publico para ver que estan respondiendo los equipos.
 
 9. Las preguntas iran apareciendo 1 por 1.
 
