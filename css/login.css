@@ -14,8 +14,28 @@ img.logotipo {
  
  #botones{
   position: relative;
-  left: 40%;
+  left: 0%;
  }
+ 
+.c1{
+                background: url(../imagenes/maestro.png) no-repeat;
+                position: absolute;
+                left: 10%;
+                cursor: pointer;
+                border: none;
+                width: 300px;
+                height: 300px;
+            }
+            
+.c2{
+                background: url(../imagenes/equipo.png) no-repeat;
+                position: absolute;
+                left: 70%;
+                cursor: pointer;
+                border: none;
+                width: 300px;
+                height: 300px;
+            } 
  
 #seleccion{
     font-size: 20px;
