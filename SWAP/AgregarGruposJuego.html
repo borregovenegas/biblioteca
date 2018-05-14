@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="iso-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../Librerias/bootstrap/css/bootstrap.min.css">
+  <title>Control Juego</title>
+</head>
+<body>
+  <div class="col-md-offset-4 col-md-4">
+      <form class="card card-container" action="">
+        <div class="form-group">
+          <h2>Agregar grupos a juego</h2>
+          <br>
+          <label for="inputCombo">Nombre del grupo</label>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Grupos disponibles</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><button type="button" id="agregarGrupo" <i class="fa fa-plus fa-lg"></i>+</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <button class="btn btn-lg btn-primary" type="submit" id="registrarJuego">Siguiente</button>
+          <button class="btn btn-lg btn-danger" type="reset">Cancelar</button>
+        </div>
+      </form>
+    </div>
+    <script src="../js/agregarGruposJuego.js"></script>
+</body>
+</html>
