@@ -34,6 +34,7 @@
 
 + Biblioteca
 	- BD
+	- Librerias
 	- css
 	- js
 	- Clases
@@ -45,6 +46,6 @@
 	
 + css
 	- Bootstrap
-	- FontAwesome
+	- FontAwesome (si es que qieren usarlo los de disenio).
 	
 index.html <- menu de usuario
