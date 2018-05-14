@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Concurso</title>
+    <link rel="stylesheet" href="Librerias/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="js/login.js"></script>
+
+</head>
+
+<body> 
+    <header>
+        <div id="logo">
+            <img class="logotipo" src="imagenes/logotecnm.png" width="237" height="97"/> Concurso de Lectura del ITD
+        </div>
+    </header>
+    
+ <div class="login">
+    <h1 class="welcome text-center">Escoge tu tipo de cuenta <br> e introduce tu usuario</h1>
+    <div id="botones">
+          <input type="button" class="c1" name="c1" id="c1" onclick="showMe(1)">
+          <input type="button" name="c2" id="c2" class="c2" onclick="showMe(2)">
+          <br>
+    </div>
+        <div class="card card-container" id="form1">
+        <h2 class='login_title text-center'>Login Administrador</h2>
+        <hr>
+            <form class="form-signin">
+                <span id="reauth-email" class="reauth-email"></span>
+                <p class="input_title">Usuario</p>
+                <input type="text" id="inputEmail" class="login_box" placeholder="usuario" required autofocus>
+                <p class="input_title">Contraseña</p>
+                <input type="password" id="inputPassword" class="login_box" placeholder="******" required>
+                <div id="remember" class="checkbox">
+                    <label>
+                        
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary btnLogin" type="submit" id="btnLogin">Login</button>
+            </form><!-- /form -->
+        </div><!-- /card-container -->
+        <div class="card card-container" id="form2">
+        <h2 class='login_title text-center'>Login Equipo</h2>
+        <hr>
+            <form class="form-signin">
+                <span id="reauth-email" class="reauth-email"></span>
+                <p class="input_title">Usuario</p>
+                <input type="text" id="inputEmail" class="login_box" placeholder="itd#control" required autofocus>
+                <p class="input_title">Contraseña</p>
+                <input type="password" id="inputPassword" class="login_box" placeholder="******" required>
+                <div id="remember" class="checkbox">
+                    <label>
+                        
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary btnLogin" type="submit" id="btnLogin">Login</button>
+            </form><!-- /form -->
+        </div><!-- /card-container -->
+    </div><!-- /container -->
+  </div>
+</form>
+    </div>
+    <footer>
+    </footer>   
+</body>
+</html>
