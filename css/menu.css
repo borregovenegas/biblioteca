@@ -61,4 +61,8 @@ background: radial-gradient(ellipse at center,  rgba(185,210,224,1) 0%,rgba(187,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9d2e0', endColorstr='#9ebfd0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-.container {padding: 16px;}
+.imagenInicial{
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 20%
+}

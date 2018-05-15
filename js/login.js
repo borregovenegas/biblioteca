@@ -15,3 +15,5 @@ window.onload = function() {
   document.getElementById('form1').style.display = 'none';
   document.getElementById('form2').style.display = 'none';
 };
+$("#btnLoginAdmin").click(function(){ $.post('../php/redireccionLoginAdmin.php', {});});
+$("#btnLoginGrupo").click(function(){ $.post('../php/redireccionLoginUsuario.php', {});});
