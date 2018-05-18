@@ -2,8 +2,8 @@
 //Deinicion de tipo de driver, servidor, usuario, password, base de datos
 //Definicion de constantes
 define('TIPO','mysqli');
-define('SERVIDOR', '192.168.50.203');
-define('USUARIO', 'pepe');
-define('PASSWORD', '1234');
-define('BASEDATOS', 'biblioteca');
+define('SERVIDOR', '192.168.0.6');
+define('USUARIO', 'root');
+define('PASSWORD', 'Priscila123');
+define('BASEDATOS', 'bibliotecaConcurso');
 ?>

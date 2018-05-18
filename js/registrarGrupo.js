@@ -1,5 +1,5 @@
 //Swap para que el administrador pueda agregar un nuevo grupo de alumnos/usuarios
-$("#registrarGrupo").click(function(){ $.post('../SWAP/RegistrarGrupo.html', {
+/*$("#registrarGrupo").click(function(){ $.post('../SWAP/RegistrarGrupo.html', {
   escuela: $("#inputEscuela").val(),
   usuario: $("#inputUser").val(),
   encargado: $("#inputEncargado").val(),
