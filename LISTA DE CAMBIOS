@@ -1,32 +1,32 @@
-# Lista de Cambios 
+# Lista de Cambios
 
 # LOGIN
-1.Al seleccionar el tipo de usuario y aparezca la plantilla de login que desaparezca el icono del usuario que no fue seleccionado.
-2.Agregar al login un botón de regresar esto con el fin de que si el niño se equivoca al seleccionar el usuario por x/y razón tenga la opción de volver al menú de selección de usuario.
+1. Al seleccionar el tipo de usuario y aparezca la plantilla de login que desaparezca el icono del usuario que no fue seleccionado.
+2. Agregar al login un botón de regresar esto con el fin de que si el niño se equivoca al seleccionar el usuario por x/y razón tenga la opción de volver al menú de selección de usuario.
 
 # Interfaz del administrador 
-3.Quitar del menú la opción de inicio ¿Qué función tiene?
-4.Agrandar las letras de la barra de menú.
-5.Sustituir armar juego por crear concurso.
-6.Cambiar de lugar registro de grupos ya que debe registrar primero los grupos para poder agregarlos al concurso. (el programador lo sabe, pero el usuario no y si se deja llevar por el orden del menú le creara conflicto).
+3. Quitar del menú la opción de inicio ¿Qué función tiene?
+4. Agrandar las letras de la barra de menú.
+5. Sustituir armar juego por crear concurso.
+6. Cambiar de lugar registro de grupos ya que debe registrar primero los grupos para poder agregarlos al concurso. (el programador lo sabe, pero el usuario no y si se deja llevar por el orden del menú le creara conflicto).
 Quedando: crear concurso =>registrar grupos=>administrar concurso=>Salir
-7.Sustituir control de juego por administrar concurso.
-8.Eliminar la opción de registrar administradores (ya que según especificaciones del cliente él y solo él se encarga del control total del sistema de ser necesario que otra persona tome el cargo, el administrador original puede brindar usuario y contraseña.
-9.Eliminar registrar ronda ya que al momento de registrar un concurso se generará aleatoriamente el número de la ronda y será asignada al concurso recién registrado. (según cambios desde el sprint #3 el juego y la ronda no deben llamarse igual y las rondas deben estar numeradas.)
-10.Al registrar el concurso enviara a una nueva ventana con el # de ronda que se generara por el programa además de agregar un botón de agregar nueva ronda. (Agregar un listado de rondas creadas para el concurso.)
-11.En el listado poner un botón de agregar y borrar preguntas, se podrá seleccionar la ronda que desees para agregar o borrar preguntas
+7. Sustituir control de juego por administrar concurso.
+8. Eliminar la opción de registrar administradores (ya que según especificaciones del cliente él y solo él se encarga del control total del sistema de ser necesario que otra persona tome el cargo, el administrador original puede brindar usuario y contraseña.
+9. Eliminar registrar ronda ya que al momento de registrar un concurso se generará aleatoriamente el número de la ronda y será asignada al concurso recién registrado. (según cambios desde el sprint #3 el juego y la ronda no deben llamarse igual y las rondas deben estar numeradas.)
+10. Al registrar el concurso enviara a una nueva ventana con el # de ronda que se generara por el programa además de agregar un botón de agregar nueva ronda. (Agregar un listado de rondas creadas para el concurso.)
+11. En el listado poner un botón de agregar y borrar preguntas, se podrá seleccionar la ronda que desees para agregar o borrar preguntas
 
 # Registrar grupo
-12.Al dar de alta en nombre de institución se genera un usuario automáticamente.
-13.eliminar email y no. de integrantes.
+12. Al dar de alta en nombre de institución se genera un usuario automáticamente.
+13. eliminar email y no. de integrantes.
 
 # Editar concurso		
-14.se selecciona el nombre del concurso y aparecerá una tabla vacía con un botón de agregar grupo, enviará a una interfaz con los grupos disponibles seleccionará el equipo que aparecerá en la lista vacía anterior a este (tendrá un signo de menos para eliminar si se equivocó.)
+14. se selecciona el nombre del concurso y aparecerá una tabla vacía con un botón de agregar grupo, enviará a una interfaz con los grupos disponibles seleccionará el equipo que aparecerá en la lista vacía anterior a este (tendrá un signo de menos para eliminar si se equivocó.)
 interfaz Equipo
-15.Eliminar toda la barra de menú (deberá contener solamente el botón de siguiente al momento de que inicie el concurso)
-16.Deberá tener el “score” para manejo de puntos de cada equipo.
-17.Bloquear los botones (cerrar, minimizar, maximizar)
-18.SE DARA UNA VISTA JUGADOR
+15. Eliminar toda la barra de menú (deberá contener solamente el botón de siguiente al momento de que inicie el concurso)
+16. Deberá tener el “score” para manejo de puntos de cada equipo.
+17. Bloquear los botones (cerrar, minimizar, maximizar)
+18. SE DARA UNA VISTA JUGADOR
 
 # TODOS LOS CAMBIOS MENCIONADOS EN LA LISTA, FUERON HABLADOS CON EL Sprint no. 4, EL CLIENTE Y EL Sprint no.5 
 
