@@ -66,3 +66,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9d2e0', end
     margin-top: 10%;
     margin-bottom: 20%
 }
+a{
+ font-size: large;
+}
