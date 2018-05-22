@@ -16,7 +16,10 @@ img.logotipo {
   position: relative;
   left: 0%;
  }
- 
+ #cancelar{
+  position: relative;
+  
+ }
 .c1{
                 background: url(../imagenes/maestro.png) no-repeat;
                 position: absolute;
