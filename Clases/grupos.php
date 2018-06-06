@@ -27,12 +27,12 @@ class Grupos extends Conectar{
     
     //listar todos los admin
     public function listarGrupos(){
-        $query="select (usuario, institucion, encargado, correoElectronico, numeroIntegrantes) from Grupos";
+        $query="select (usuario, institucion, encargado) from Grupos";
         $datos=$this->db->execute($query);
         //echo var_dump($datos);
         $aGrupos=array();
         while(!$datos->EOF){
-            $aGrupos[]=Array('usuario'=>$datos->fields('usuario'),'institucion'=>$datos->fields('institucion'),'encargado'=>$datos->fields('encargado'),'correoElectronico'=>$datos->fields('correoElectronico'),'numeroIntegrantes'=>$datos->fields('numeroIntegrantes'));
+            $aGrupos[]=Array('usuario'=>$datos->fields('usuario'),'institucion'=>$datos->fields('institucion'),'encargado'=>$datos->fields('encargado'));
             $datos->MoveNext();
         }
         //echo var_dump($aUsuarios);
@@ -41,14 +41,12 @@ class Grupos extends Conectar{
     }
     
     //agregar grupo
-    public function agregarGrupo($institucion,$password,$encargado,$usuario,$correoElectronico,$numeroIntegrantes){
+    public function agregarGrupo($institucion,$password,$encargado,$usuario){
         $institucion=htmlspecialchars($institucion);
         $password=htmlspecialchars($password);
         $encargado=htmlspecialchars($encargado);
         $usuario=htmlspecialchars($usuario);
-        $correoElectronico=htmlspecialchars($correoElectronico);
-        $numeroIntegrantes=htmlspecialchars($numeroIntegrantes);
-        $query="insert into Grupos (institucion,password,encargado,usuario,correoElectronico,numeroIntegrantes) values ('$institucion','$password','$encargado','$usuario','$correoElectronico','$numeroIntegrantes')";
+        $query="insert into Grupos (institucion,encargado,usuario,password) values ('$institucion','$encargado','$usuario','$password')";
         $datos=$this->db->execute($query);
         $aGrupos=array();
         $aGrupos=($datos)?array('exito'=>true):array('exito'=>false);
@@ -57,15 +55,12 @@ class Grupos extends Conectar{
     
     
     //modificar grupo
-    public function modificarGrupo($idGrupo,$institucion,$password,$encargado,$usuario,$correoElectronico,$numeroIntegrantes){
-        $idGrupo=htmlspecialchars($idGrupo);
+    public function modificarGrupo($institucion,$password,$encargado,$usuario){
         $institucion=htmlspecialchars($institucion);
         $password=htmlspecialchars($password);
         $encargado=htmlspecialchars($encargado);
         $usuario=htmlspecialchars($usuario);
-        $correoElectronico=htmlspecialchars($correoElectronico);
-        $numeroIntegrantes=htmlspecialchars($numeroIntegrantes);
-       $query="update Grupos where idGrupo=$idGrupo set institucion='$institucion',password='$password',encargado='$encargado',usuario='$usuario',correoElectronico='$correoElectronico',numeroIntegrantes='$numeroIntegrantes'";
+       $query="update Grupos where usuario=$usuario set institucion='$institucion',password='$password',encargado='$encargado',usuario='$usuario'";
         $datos=$this->db->execute($query);
         $aGrupos=array();
         $aGrupos=($datos)?array('exito'=>true):array('exito'=>false);

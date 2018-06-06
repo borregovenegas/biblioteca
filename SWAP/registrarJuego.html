@@ -7,8 +7,24 @@
         <input type="text" class="form-control" id="inputJuego" placeholder="Escribe el nombre del juego">
         <br>
         <button class="btn btn-lg btn-primary" type="submit" id="registrarJuego">Registrar Concurso</button>
-        <button class="btn btn-lg btn-danger" type="reset" id="cancelar">Cancelar</button>
+        <button class="btn btn-lg btn-danger" type="reset" id="cancelar">Terminar</button>
       </div>
     </form>
+    <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Concursos</th>
+                <th colspan=3>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ejemplo concurso</td>
+                <td><button type="button" id="Editar" <i class="fa fa-pencil fa-lg"></i>editar</button></td>
+                <td><button type="button" id="Eliminar" <i class="fa fa-eraser fa-lg"></i>eliminar</button></td>
+                <td><button type="button" id="AgregarGrupos" <i class="fa fa-plus fa-lg"></i>AgregarGrupos</button></td>
+              </tr>
+            </tbody>
+          </table>
   </div>
   <script src="../js/RegistrarJuego.js"></script>

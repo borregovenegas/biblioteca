@@ -12,7 +12,7 @@ class Admin extends Conectar{
     public function buscarAdmin($usuario,$contrasenia){
         $usuario=htmlspecialchars($usuario);
         $contrasenia=htmlspecialchars($contrasenia);
-        $query="select * from admin where usuario='$usuario' and password='$contrasenia'";
+        $query="select * from Admin where usuario='$usuario' and password='$contrasenia'";
         $datos=$this->db->execute($query);
         $aAdmin=array();
         if($datos->RecordCount()){
