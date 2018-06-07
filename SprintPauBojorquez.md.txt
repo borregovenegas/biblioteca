@@ -1,0 +1,45 @@
+Sprint #5 del 21 al 25 de Mayo
+
+SprintMaster: Paulina Bojorquez
+
+Diseño:
+1. Tadeo
+2. Aimee
+
+BD
+1. Miguel
+2. Paulina
+
+Programadores
+1. Javier
+2. Pepe
+3. Cesar
+
+Analistas
+1. Wendy
+2. Selenee
+
+Servidor
+1. Andres
+
+
+Estructura
+
+   -Biblioteca
+      -BD
+         -coonfig.inc.pnp
+         -claseconectar.inc.php
+         -claseusuarios.inc.php
+         -Conex.pnp
+      -css
+      -js
+      -Clases
+      -Librerias
+          -boostrap
+          -awesome
+          -validation
+      -Menus
+      -SWAP
+
+Cambios:
+

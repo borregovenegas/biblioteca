@@ -8,10 +8,6 @@ img.logotipo {
     color: #566E7F;
     /*text-align: center;*/
  }
- 
- #navegacion{
-  font-size: 19px;
- }
 .equipos{
                 background: url(../imagenes/registro.png) no-repeat;
                 position: absolute;
@@ -69,4 +65,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9d2e0', end
     margin: auto;
     margin-top: 10%;
     margin-bottom: 20%
+}
+a{
+ font-size: large;
 }

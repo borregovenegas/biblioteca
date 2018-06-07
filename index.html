@@ -8,14 +8,18 @@
   <title>Concurso</title>
   <link rel="stylesheet" href="Librerias/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/login.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 </head>
 
 <body>
   <header>
     <div id="logo">
-      <img class="logotipo" src="imagenes/logotecnm.png" width="237" height="97" /> Concurso de Lectura del ITD
+      <img class="logotipo" src="imagenes/logotecnm.png" width="237" height="97" /> Concurso de Lectura del Instituto Tecnol&oacute;gico de Delicias
     </div>
   </header>
+  <div id="contenido">
+    
+  </div>
 
   <div class="login">
     <h1 class="welcome text-center">Escoge tu tipo de cuenta <br> e introduce tu usuario</h1>
@@ -40,10 +44,8 @@
         </div>
         <button class="btn btn-lg btn-primary btnLogin" type="submit" id="btnLoginAdmin">Login</button>
       </form>
-      </hr>
-      <div id="cancelar">
+      <br>
       <center><button class="btn btn-lg btn-danger" id="btnVolver" style="width: 150px;" onclick="cancelBtn();">Volver</button></center>
-    </div>
       <!-- /form -->
     </div>
     <!-- /card-container -->
@@ -63,24 +65,20 @@
         </div>
         <button class="btn btn-lg btn-primary btnLogin" type="submit" id="btnLoginGrupo" >Login</button>
       </form>
-      <div id="cancelar">
+      <br>
       <center><button class="btn btn-lg btn-danger" id="btnVolver" style="width: 150px;" onclick="cancelBtn();">Volver</button></center>
-    </div>
       <!-- /form -->
     </div>
     <!-- /card-container -->
-    
   </div>
   <!-- /container -->
   </div>
   </form>
   </div>
   <footer>
-    <button onclick="launchFullScreen(document.documentElement);"> Entrar en pantalla completa </button>
-<button onclick="cancelFullScreen();"> Salir de pantalla completa </button>
   </footer>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="Librerias/jQuery.js"></script>
+  <script src="Librerias/bootstrap.min.js"></script>
   <script src="js/login.js"></script>
 </body>
 
