@@ -1,7 +1,7 @@
 
 <?php
 require_once('../BD/claseConectar.php');
-class Juegos extends Conectar{
+class Concurso extends Conectar{
     private $db;
     public function __construct(){
         $this->db=parent::Conectar();//verificar si es que si se llama conexion o coneccion el metodo de la coneccion que iso el pepe
@@ -12,7 +12,7 @@ class Juegos extends Conectar{
     //buscar grupo
     public function buscarJuego($nombre){
         $usuario=htmlspecialchars($usuario);
-        $query="select (nombre) from Juegos where nombre='$nombre'";
+        $query="select (nombre) from Concurso where nombre='$nombre'";
         $datos=$this->db->execute($query);
         $aGrupos=array();
         if($datos->RecordCount()){
@@ -26,7 +26,7 @@ class Juegos extends Conectar{
     
     //listar todos los admin
     public function listarJuegos(){
-        $query="select (nombre) from Juegos";
+        $query="select (nombre) from concurso";
         $datos=$this->db->execute($query);
         //echo var_dump($datos);
         $a=array();
@@ -42,7 +42,7 @@ class Juegos extends Conectar{
     //agregar grupo
     public function agregarJuego($nombre){
         $nombre=htmlspecialchars($nombre);
-        $query="insert into Juegos (nombre) values ('$nombre')";
+        $query="insert into Concurso (nombre) values ('$nombre')";
         $datos=$this->db->execute($query);
         $a=array();
         $a=($datos)?array('exito'=>true):array('exito'=>false);

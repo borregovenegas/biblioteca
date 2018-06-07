@@ -27,12 +27,12 @@ class Grupos extends Conectar{
     
     //listar todos los admin
     public function listarGrupos(){
-        $query="select (usuario, institucion, encargado) from Grupos";
+        $query="select * from Grupos";
         $datos=$this->db->execute($query);
         //echo var_dump($datos);
         $aGrupos=array();
         while(!$datos->EOF){
-            $aGrupos[]=Array('usuario'=>$datos->fields('usuario'),'institucion'=>$datos->fields('institucion'),'encargado'=>$datos->fields('encargado'));
+            $aGrupos[]=Array('usuario'=>$datos->fields('usuario'),'institucion'=>$datos->fields('institucion'),'encargado'=>$datos->fields('encargado'),'password'=>$datos->fields('password'));
             $datos->MoveNext();
         }
         //echo var_dump($aUsuarios);
@@ -71,7 +71,7 @@ class Grupos extends Conectar{
     //borrar grupo
     public function eliminarGrupo($usuario){
         $usuario=htmlspecialchars($usuario);
-       $query="delete from Grupos where usuario='$usuario'";
+       $query="delete from Grupos where institucion='$usuario'";
         $datos=$this->db->execute($query);
         $aGrupos=array();
         $aGrupos=($datos)?array('exito'=>true):array('exito'=>false);

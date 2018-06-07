@@ -5,7 +5,7 @@ $("#RegistrarConcurso").click(function(){ $.post('../SWAP/registrarJuego.html', 
 //Swap para que el administrador lleve el control de un juego.
 $("#Concurso").click(function(){ $.post('../SWAP/ControlJuego.html', {}, function(data){ $("#contenido").html(data);});});
 //Swap para que el administrador pueda registrar un juego.
-$("#RegistrarGrupo").click(function(){ $.post('../SWAP/registrarGrupo.html', {}, function(data){ $("#contenido").html(data);});});
+$("#RegistrarGrupo").click(function(){ $.post('../SWAP/registrarGrupo.php', {}, function(data){ $("#contenido").html(data);});});
 //Swap para que el administrador pueda registrar un administrador nuevo.
 $("#RegistrarAdministrador").click(function(){ $.post('../SWAP/RegistrarAdministrador.html', {}, function(data){ $("#contenido").html(data);});});
 //Swap para que el administrador pueda cerrar sesión.

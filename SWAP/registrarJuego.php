@@ -1,3 +1,10 @@
+<?php
+session_start();
+echo $_SESSION['nombre'];
+require_once('../Clases/concurso.php');
+$concurso=new Concurso;
+$listar=$concurso->listarJuegos();
+?>
 <div class="col-md-offset-4 col-md-4">
     <form class="card card-container" action="">
       <div class="form-group">
@@ -14,16 +21,24 @@
             <thead>
               <tr>
                 <th>Concursos</th>
-                <th colspan=3>Acciones</th>
+                <th colspan="3">Acciones</th>
               </tr>
             </thead>
             <tbody>
+              <?php
+              foreach($lista as $l){
+              
+              ?>
               <tr>
-                <td>Ejemplo concurso</td>
-                <td><button type="button" id="Editar" <i class="fa fa-pencil fa-lg"></i>editar</button></td>
+                <td><?php echo $l['nombre']; ?></td>
+                <td><button type="button" id="Editar" <i class="fa fa-pencil fa-lg" name="<?php echo $l['nombre']; ?>"></i>editar</button></td>
                 <td><button type="button" id="Eliminar" <i class="fa fa-eraser fa-lg"></i>eliminar</button></td>
                 <td><button type="button" id="AgregarGrupos" <i class="fa fa-plus fa-lg"></i>AgregarGrupos</button></td>
               </tr>
+              
+              <?php
+              }
+              ?>
             </tbody>
           </table>
   </div>
